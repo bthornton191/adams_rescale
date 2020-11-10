@@ -1,0 +1,3 @@
+file command read file_name="rescale_model.cmd"
+file adams_data_set write model_name=.rescale_model file_name=rescale_analysis_from_batch
+simulation script write_acf sim_script_name=.rescale_model.SIM_SCRIPT_1 file_name=rescale_analysis_from_batch

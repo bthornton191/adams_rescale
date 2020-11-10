@@ -1,0 +1,7 @@
+config.json
+*.pyc
+*.log
+downloaded_results/*
+.vscode/*
+*.bin
+**aview.cmd

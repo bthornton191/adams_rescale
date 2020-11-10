@@ -1,0 +1,6 @@
+
+file/model=rescale_analysis
+! Insert ACF commands here:
+SIMULATE/STATIC
+SIMULATE/DYNAMIC, END=5.0, DTOUT=1.0E-02
+stop

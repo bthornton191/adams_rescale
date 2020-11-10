@@ -1,0 +1,121 @@
+Adams View model name: rescale_model
+!
+!-------------------------------- SYSTEM UNITS ---------------------------------
+!
+UNITS/
+, FORCE = POUND_FORCE
+, MASS = POUND_MASS
+, LENGTH = INCH
+, TIME = SECOND
+!
+!----------------------------------- PARTS -------------------------------------
+!
+!----------------------------------- Ground ------------------------------------
+!
+!                            adams_view_name='ground'
+PART/1
+, GROUND
+!
+!                           adams_view_name='MARKER_4'
+MARKER/4
+, PART = 1
+, QP = 0, 12, 0
+!
+!------------------------------------ Part -------------------------------------
+!
+!                            adams_view_name='PART_2'
+PART/2
+, MASS = 40.60564164
+, CM = 7
+, IP = 726.1959478, 726.1959478, 65.03247294
+!
+!                           adams_view_name='MARKER_1'
+MARKER/1
+, PART = 2
+, QP = 0, 12, 0
+, REULER = 24.77514057D, 90D, 0D
+!
+!                           adams_view_name='MARKER_3'
+MARKER/3
+, PART = 2
+, QP = 0, 12, 0
+!
+!                           adams_view_name='MARKER_6'
+MARKER/6
+, PART = 2
+, QP = 6, -1, 0
+!
+!                              adams_view_name='cm'
+MARKER/7
+, PART = 2
+, QP = 3, 5.5, 0
+, REULER = 24.77514057D, 90D, 0D
+!
+!                          adams_view_name='CYLINDER_1'
+GRAPHICS/1
+, CYLINDER
+, CM = 1
+, LENGTH = 14.31782106
+, RADIUS = 1.789727633
+!
+!------------------------------------ Part -------------------------------------
+!
+!                            adams_view_name='PART_3'
+PART/3
+, MASS = 26.71217658
+, CM = 8
+, IP = 85.47896506, 85.47896506, 85.47896506
+!
+!                           adams_view_name='MARKER_2'
+MARKER/2
+, PART = 3
+, QP = 6, -1, 0
+!
+!                           adams_view_name='MARKER_5'
+MARKER/5
+, PART = 3
+, QP = 6, -1, 0
+!
+!                              adams_view_name='cm'
+MARKER/8
+, PART = 3
+, QP = 6, -1, 0
+, REULER = 180D, 90D, 90D
+!
+!                         adams_view_name='ELLIPSOID_2'
+GRAPHICS/2
+, ELLIPSOID
+, CM = 2
+, XSCALE = 5.656854249
+, YSCALE = 5.656854249
+, ZSCALE = 5.656854249
+!
+!-------------------------------- CONSTRAINTS ----------------------------------
+!
+!                           adams_view_name='JOINT_1'
+JOINT/1
+, REVOLUTE
+, I = 3
+, J = 4
+!
+!                           adams_view_name='JOINT_2'
+JOINT/2
+, FIXED
+, I = 5
+, J = 6
+!
+!------------------------- GRAVITATIONAL ACCELERATION --------------------------
+!
+ACCGRAV/
+, JGRAV = -386.0885827
+!
+!----------------------------- ANALYSIS SETTINGS -------------------------------
+!
+OUTPUT/
+, REQSAVE
+, GRSAVE
+!
+RESULTS/
+, XRF
+!
+END
